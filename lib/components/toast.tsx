@@ -5,8 +5,7 @@ import { splitProps } from 'solid-js'
 import { Portal } from 'solid-js/web'
 import type { VariantProps } from 'class-variance-authority'
 import type { Component, JSX } from 'solid-js'
-
-import { cn } from '@src/utils'
+import { cn } from '@lib/utils'
 
 const Toaster: Component<ToastPrimitive.ToastListProps> = (props) => {
     const [, rest] = splitProps(props, ['class'])

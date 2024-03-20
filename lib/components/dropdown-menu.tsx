@@ -2,8 +2,7 @@ import { DropdownMenu as DropdownMenuPrimitive } from '@kobalte/core'
 import { TbCheck, TbChevronRight, TbCircle } from 'solid-icons/tb'
 import { splitProps } from 'solid-js'
 import type { Component, ComponentProps } from 'solid-js'
-
-import { cn } from '@src/utils'
+import { cn } from '@lib/utils'
 
 const DropdownMenu: Component<DropdownMenuPrimitive.DropdownMenuRootProps> = (props) => {
     return <DropdownMenuPrimitive.Root gutter={4} {...props} />

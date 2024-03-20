@@ -1,7 +1,6 @@
 import { mergeProps, splitProps } from 'solid-js'
 import type { Component, ComponentProps } from 'solid-js'
-
-import { cn } from '@src/utils'
+import { cn } from '@lib/utils'
 
 type JustifyContent = 'start' | 'end' | 'center' | 'between' | 'around' | 'evenly'
 type AlignItems = 'start' | 'end' | 'center' | 'baseline' | 'stretch'

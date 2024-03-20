@@ -1,7 +1,7 @@
 import { Combobox as ComboboxPrimitive } from '@kobalte/core'
 import { TbCheck, TbSelector } from 'solid-icons/tb'
 import { type Component, splitProps } from 'solid-js'
-import { cn } from '@src/utils'
+import { cn } from '@lib/utils'
 
 const Combobox = ComboboxPrimitive.Root
 

@@ -1,6 +1,6 @@
 import { splitProps } from 'solid-js'
 import type { Component, ComponentProps } from 'solid-js'
-import { cn } from '@src/utils'
+import { cn } from '@lib/utils'
 
 const Input: Component<ComponentProps<'input'>> = (props) => {
     const [, rest] = splitProps(props, ['type', 'class'])

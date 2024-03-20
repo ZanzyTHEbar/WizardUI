@@ -3,8 +3,7 @@ import { cva, type VariantProps } from 'class-variance-authority'
 import { TbX } from 'solid-icons/tb'
 import { splitProps } from 'solid-js'
 import type { Component, ComponentProps } from 'solid-js'
-
-import { cn } from '@src/utils'
+import { cn } from '@lib/utils'
 
 const Sheet = SheetPrimitive.Root
 

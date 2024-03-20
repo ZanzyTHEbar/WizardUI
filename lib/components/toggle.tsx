@@ -3,8 +3,7 @@ import { cva } from 'class-variance-authority'
 import { splitProps } from 'solid-js'
 import type { VariantProps } from 'class-variance-authority'
 import type { Component } from 'solid-js'
-
-import { cn } from '@src/utils'
+import { cn } from '@lib/utils'
 
 const toggleVariants = cva(
     'focus-visible:ring-ring inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring disabled:pointer-events-none disabled:opacity-50',

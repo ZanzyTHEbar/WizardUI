@@ -1,6 +1,5 @@
 import { splitProps, type Component, type ComponentProps, mergeProps, Show } from 'solid-js'
-
-import { cn } from '@src/utils'
+import { cn } from '@lib/utils'
 
 export interface DeltaBarProps extends ComponentProps<'div'> {
     value: number

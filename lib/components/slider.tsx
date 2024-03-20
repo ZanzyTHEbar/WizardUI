@@ -2,8 +2,7 @@ import { Slider as SliderPrimitive } from '@kobalte/core'
 import { splitProps } from 'solid-js'
 import type { Component } from 'solid-js'
 import { Label } from '@components/label'
-
-import { cn } from '@src/utils'
+import { cn } from '@lib/utils'
 
 const Slider: Component<SliderPrimitive.SliderRootProps> = (props) => {
     const [, rest] = splitProps(props, ['class'])

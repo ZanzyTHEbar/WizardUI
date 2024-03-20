@@ -2,14 +2,25 @@
     "name": "wizardui",
     "version": "0.0.1",
     "description": "",
-    "main": "index.js",
+    "type": "module",
+    "files": [
+        "dist"
+    ],
+    "main": "./dist/wizard-ui.umd.cjs",
+    "module": "./dist/wizard-ui.js",
+    "exports": {
+        ".": {
+            "import": "./dist/wizard-ui.js",
+            "require": "./dist/wizard-ui.umd.cjs"
+        }
+    },
     "scripts": {
         "dev": "vite dev",
         "build": "tsc && vite build",
         "start": "vite start",
         "serve": "vite preview",
-        "lint": "eslint --ext .js,.ts,.jsx,.tsx src",
-        "format": "pnpm run lint --fix & pnpm prettier --write \"src/**/*.{js,jsx,ts,tsx}\"",
+        "lint": "eslint --ext .js,.ts,.jsx,.tsx lib",
+        "format": "pnpm run lint --fix & pnpm prettier --write \"lib/**/*.{js,jsx,ts,tsx}\"",
         "update-deps": "pnpm up -Li",
         "typecheck": "tsc --noEmit"
     },
@@ -67,8 +78,5 @@
         "terracotta": "^1.0.4",
         "theme-change": "^2.5.0",
         "ts-deepmerge": "^6.1.0"
-    },
-    "files": [
-        "dist"
-    ]
+    }
 }

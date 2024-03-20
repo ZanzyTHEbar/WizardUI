@@ -2,8 +2,7 @@ import { Dialog as DialogPrimitive } from '@kobalte/core'
 import { TbX } from 'solid-icons/tb'
 import { splitProps } from 'solid-js'
 import type { Component, ComponentProps } from 'solid-js'
-
-import { cn } from '@src/utils'
+import { cn } from '@lib/utils'
 
 const Dialog = DialogPrimitive.Root
 

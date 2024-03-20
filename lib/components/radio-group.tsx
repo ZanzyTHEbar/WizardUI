@@ -2,7 +2,7 @@ import { RadioGroup as RadioGroupPrimitive } from '@kobalte/core'
 import { TbCircle } from 'solid-icons/tb'
 import { splitProps } from 'solid-js'
 import type { Component } from 'solid-js'
-import { cn } from '@src/utils'
+import { cn } from '@lib/utils'
 
 const RadioGroup: Component<RadioGroupPrimitive.RadioGroupRootProps> = (props) => {
     const [, rest] = splitProps(props, ['class'])

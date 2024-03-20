@@ -9,7 +9,7 @@ import {
     type ComponentProps,
     children,
 } from 'solid-js'
-import { cn } from '@src/utils'
+import { cn } from '@lib/utils'
 
 type SolidRef = (el: HTMLDivElement) => void
 

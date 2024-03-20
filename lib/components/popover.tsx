@@ -1,8 +1,7 @@
 import { Popover as PopoverPrimitive } from '@kobalte/core'
 import { splitProps } from 'solid-js'
 import type { Component } from 'solid-js'
-
-import { cn } from '@src/utils'
+import { cn } from '@lib/utils'
 
 const Popover: Component<PopoverPrimitive.PopoverRootProps> = (props) => {
     return <PopoverPrimitive.Root gutter={4} {...props} />

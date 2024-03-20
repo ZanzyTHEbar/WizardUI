@@ -1,8 +1,7 @@
 import { Switch as SwitchPrimitive } from '@kobalte/core'
 import { Show, splitProps } from 'solid-js'
 import type { Component } from 'solid-js'
-
-import { cn } from '@src/utils'
+import { cn } from '@lib/utils'
 
 interface SwitchProps extends SwitchPrimitive.SwitchRootProps {
     label?: string

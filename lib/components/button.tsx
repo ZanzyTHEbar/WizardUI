@@ -2,7 +2,7 @@ import { cva } from 'class-variance-authority'
 import { splitProps, children } from 'solid-js'
 import type { VariantProps } from 'class-variance-authority'
 import type { Component, ComponentProps, JSXElement } from 'solid-js'
-import { cn } from '@src/utils'
+import { cn } from '@lib/utils'
 
 //ring-offset-background focus-visible:ring-ring inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50
 const buttonVariants = cva('btn cursor-pointer', {

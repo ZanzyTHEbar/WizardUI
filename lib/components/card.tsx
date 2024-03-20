@@ -1,7 +1,6 @@
 import { splitProps } from 'solid-js'
 import type { Component, ComponentProps } from 'solid-js'
-
-import { cn } from '@src/utils'
+import { cn } from '@lib/utils'
 
 const Card: Component<ComponentProps<'div'>> = (props) => {
     const [, rest] = splitProps(props, ['class'])

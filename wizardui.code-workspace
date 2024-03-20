@@ -1,0 +1,54 @@
+{
+    "folders": [
+        {
+            "path": ".",
+        },
+    ],
+    "settings": {
+        "tailwindCSS.includeLanguages": {
+            "html": "html",
+            "javascript": "javascript",
+            "css": "css",
+        },
+        "files.autoSave": "afterDelay",
+        "editor.quickSuggestions": {
+            "strings": true,
+        },
+        "editor.codeActionsOnSave": {
+            "source.fixAll.eslint": "explicit",
+        },
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "[jsonc]": {
+            "editor.defaultFormatter": "esbenp.prettier-vscode",
+        },
+        "[javascript]": {
+            "editor.defaultFormatter": "esbenp.prettier-vscode",
+        },
+        "[typescript]": {
+            "editor.defaultFormatter": "esbenp.prettier-vscode",
+        },
+        "[json]": {
+            "editor.defaultFormatter": "esbenp.prettier-vscode",
+        },
+        "editor.formatOnSave": true,
+        "files.exclude": {
+            "**/.git": false,
+        },
+        "cSpell.words": [
+            "clsx",
+            "daisyui",
+            "deepmerge",
+            "kobalte",
+            "solidjs",
+            "typecheck",
+            "wizardui",
+        ],
+    },
+    "extensions": {
+        "recommendations": [
+            "dbaeumer.vscode-eslint",
+            "esbenp.prettier-vscode",
+            "wix.vscode-import-cost",
+        ],
+    },
+}

@@ -1,0 +1,11 @@
+/** Import all project related CSS files here */
+/*! Do not put raw CSS code in this file  */
+
+/* TailWindCSS Files */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* Custom CSS Files */
+@import 'index.css';
+@import 'solid-ui.css';

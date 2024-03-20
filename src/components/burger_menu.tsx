@@ -1,7 +1,7 @@
 import { FiMenu } from 'solid-icons/fi'
 import { Component, ComponentProps, Show, splitProps } from 'solid-js'
 import { Transition } from 'terracotta'
-import { Label } from '@components/ui/label'
+import { Label } from '@components/label'
 import { cn } from '@src/utils'
 
 interface BurgerMenuProps extends ComponentProps<'div'> {

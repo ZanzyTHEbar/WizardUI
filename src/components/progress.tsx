@@ -2,7 +2,7 @@ import { Progress as ProgressPrimitive } from '@kobalte/core'
 import { splitProps } from 'solid-js'
 import type { Component } from 'solid-js'
 
-import { Label } from '@src/components/ui/label'
+import { Label } from '@components/label'
 
 const Progress: Component<ProgressPrimitive.ProgressRootProps> = (props) => {
     const [, rest] = splitProps(props, ['children'])

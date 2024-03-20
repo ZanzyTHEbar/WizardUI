@@ -2,12 +2,13 @@
 
 import kobalte from '@kobalte/tailwindcss'
 import daisyui from 'daisyui'
+import defaultTheme from 'tailwindcss/defaultTheme'
 import type { Config } from 'tailwindcss'
 
 // add class='dark' to <html> to enable dark mode - https://tailwindcss.com/docs/dark-mode
 
 const config = {
-    plugins: [daisyui],
+    plugins: [daisyui, kobalte],
     darkMode: ['class', '[data-theme="dark"]' /* , '[data-kb-theme="dark"]' */],
     content: ['./src/**/*.{js,jsx,md,mdx,ts,tsx}'],
 

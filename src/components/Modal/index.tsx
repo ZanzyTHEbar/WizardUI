@@ -8,15 +8,22 @@ import {
     DialogFooter,
     DialogTitle,
     DialogDescription,
-} from '@components/ui/dialog'
-import { Label } from '@components/ui/label'
+} from '@components/dialog'
+import { Label } from '@components/label'
+
+// TODO: Break out customization of classes and styles into props
 
 export interface ModalEvents {
     onCancel: (e: PointerEvent) => void
     onSubmit: (e: PointerEvent) => void
 }
 
-interface ModalProps extends ModalEvents {
+export interface ModalContentProps extends ModalEvents {
+    cancelLabel?: string
+    submitLabel?: string
+}
+
+interface ModalProps extends ModalContentProps {
     id: string
     ariaLabel: string
     title: string
@@ -41,7 +48,11 @@ const Modal: ParentComponent<ModalProps> = (props) => {
                     </DialogTitle>
                     <DialogDescription>{props.description}</DialogDescription>
                 </DialogHeader>
-                <ModalContent onCancel={props.onCancel} onSubmit={props.onSubmit}>
+                <ModalContent
+                    submitLabel={props.submitLabel}
+                    cancelLabel={props.cancelLabel}
+                    onCancel={props.onCancel}
+                    onSubmit={props.onSubmit}>
                     {props.children}
                 </ModalContent>
                 <DialogFooter />

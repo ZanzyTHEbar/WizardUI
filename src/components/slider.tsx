@@ -1,7 +1,7 @@
 import { Slider as SliderPrimitive } from '@kobalte/core'
 import { splitProps } from 'solid-js'
 import type { Component } from 'solid-js'
-import { Label } from '@src/components/ui/label'
+import { Label } from '@components/label'
 
 import { cn } from '@src/utils'
 

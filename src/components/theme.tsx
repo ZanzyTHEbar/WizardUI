@@ -1,13 +1,40 @@
 import { createSignal, onMount, type Component, type JSXElement, createEffect } from 'solid-js'
-import {
-    Select,
-    SelectValue,
-    SelectTrigger,
-    SelectContent,
-    SelectItem,
-} from '@components/ui/select'
+import { Select, SelectValue, SelectTrigger, SelectContent, SelectItem } from '@components/select'
 
-import { themes } from '@src/static/.'
+const themes = [
+    'light',
+    'dark',
+    'cupcake',
+    'bumblebee',
+    'emerald',
+    'corporate',
+    'synthwave',
+    'retro',
+    'cyberpunk',
+    'valentine',
+    'halloween',
+    'garden',
+    'forest',
+    'aqua',
+    'lofi',
+    'pastel',
+    'fantasy',
+    'wireframe',
+    'black',
+    'luxury',
+    'dracula',
+    'cmyk',
+    'autumn',
+    'business',
+    'acid',
+    'lemonade',
+    'night',
+    'coffee',
+    'winter',
+    'dim',
+    'nord',
+    'sunset',
+]
 
 /**
  * @description SelectTheme component
@@ -33,8 +60,8 @@ const SelectTheme: Component = (): JSXElement => {
             document.documentElement.setAttribute('data-theme', value())
             localStorage.setItem('app-theme', value())
         }
-        console.log('[LocalStorage Value]: ', theme)
-        console.log('[Current Value]: ', value())
+        console.debug('[WizardUI - ThemeSelect - LocalStorage Value]: ', theme)
+        console.debug('[WizardUI - ThemeSelect - Current Value]: ', value())
     }
 
     onMount(() => {
